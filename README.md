@@ -1,2 +1,2 @@
-# sstctfbot
-SST CTF Discord Bot
+# SST CTF Discord Bot
+Source code for SST CTF club's discord bot
