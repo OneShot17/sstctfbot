@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix='!', description='Offical SSTCTF Club Bot')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name='Try !killme'))
+    await bot.change_presence(game=discord.Game(name='School [Gone]'))
 
     print('------')
     print('Logged in as:')
@@ -22,7 +22,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if bot.user.mentioned_in(message) and message.mention_everyone:
+    if bot.user.mentioned_in(message) and not message.mention_everyone:
         await bot.send_message(message.channel, 'Feels bad man')
 
     await bot.process_commands(message)
