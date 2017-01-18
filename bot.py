@@ -22,7 +22,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if bot.user.mentioned_in(message):
+    if bot.user.mentioned_in(message) and message.mention_everyone:
         await bot.send_message(message.channel, 'Feels bad man')
 
     await bot.process_commands(message)
