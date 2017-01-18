@@ -11,6 +11,14 @@ class Misc:
         await self.bot.say('Suicide Hotline: 1-800-273-8255')
 
     @commands.command()
+    async def kys(self):
+        await self.bot.say('No u')
+
+    @commands.command()
+    async def kms(self):
+        await self.bot.say('Suicide Hotline: 1-800-273-8255')
+
+    @commands.command()
     async def documentation(self):
         await self.bot.say('''Is there any documentation for this? 
         
