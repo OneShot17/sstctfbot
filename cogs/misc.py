@@ -21,5 +21,16 @@ class Misc:
     async def tamir(self):
         await self.bot.say('Feels bad man :(')
 
+    @commands.command()
+    async def tamir2(self):
+        await self.bot.say('''Interviewer: What\'s your greatest accomplishment?
+
+Tamir: I got a 9 in AP Lang once!''')
+
+    @commands.command()
+    async def d6(self):
+        await self.bot.say('''4  
+http://xkcd.com/221/''')
+
 def setup(bot):
     bot.add_cog(Misc(bot))
