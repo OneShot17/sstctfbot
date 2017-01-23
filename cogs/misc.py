@@ -12,7 +12,7 @@ class Misc:
 
     @commands.command()
     async def kys(self):
-        await self.bot.say('No u')
+        await self.bot.say('No u <:kys:270478677983100928>')
 
     @commands.command()
     async def kms(self):
