@@ -3,10 +3,6 @@ from discord.ext import commands
 import asyncio
 import json
 
-import string
-import hashlib
-import base64
-
 startup_extensions = ["cogs.ctf", "cogs.misc"]
 bot = commands.Bot(command_prefix='!', description='Offical SSTCTF Club Bot')
 
