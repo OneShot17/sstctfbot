@@ -40,5 +40,10 @@ Tamir: I got a 9 in AP Lang once!''')
         await self.bot.say('''4  
 http://xkcd.com/221/''')
 
+    @commands.command()
+    async def dane(self):
+        await self.bot.say('Dane\'s parents don\'t love him and he has no friends')
+
+
 def setup(bot):
     bot.add_cog(Misc(bot))
