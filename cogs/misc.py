@@ -45,10 +45,13 @@ http://xkcd.com/221/''')
         await self.bot.say('Dane\'s parents don\'t love him and he has no friends')
 
     @commands.command()
-    async def stephen(self):
-        await self.bot.say('''Interviewer: What is your greatest accomplishment?
+    async def suicideline(self):
+        await self.bot.say('''```
+Are you tired of this life? Do you just want to end it all? Do you not know how?
 
-Stephen: I was saved from suicide by a 9 in AP Lang once!
+We do! Call 1-800-KYS-2DAY for help! That's 1-800-KYS-2DAY, or 1-800-597-8329.
+
+```
 ''');
 
 def setup(bot):
