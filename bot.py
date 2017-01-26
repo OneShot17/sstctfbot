@@ -20,12 +20,14 @@ description = "Offical SSTCTF Club Bot"
 class Bot(commands.Bot):
     def __init__(self, description):
         self.shutdown_mode = None
+        self.update_mode = False
         self.command_prefix = '!'
         self.default_status = 'Now with custom statuses!'
         super().__init__(command_prefix=self.command_prefix, description=description)
 
-    async def shutdown(self, restart=False):
+    async def shutdown(self, restart=False, update=False):
         self.shutdown_mode = not restart
+        self.update_mode = update
         await self.logout()
 
 def initialize(bot_class=Bot):
@@ -102,6 +104,9 @@ if __name__ == '__main__':
         if bot.shutdown_mode is True:
             exit(0)
         elif bot.shutdown_mode is False:
-            exit(26)
+            if bot.update_mode is True:
+                exit(25)
+            else:
+                exit(26)
         else:
             exit(1)

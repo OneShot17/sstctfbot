@@ -15,6 +15,11 @@ class Admin:
         
     @commands.command()
     @checks.is_owner()
+    async def update(self):
+        await self.bot.shutdown(restart=True, update=True)
+
+    @commands.command()
+    @checks.is_owner()
     async def restart(self):
         await self.bot.shutdown(restart=True)
     
