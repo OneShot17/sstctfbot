@@ -21,6 +21,7 @@ class Bot(commands.Bot):
     def __init__(self, description):
         self.shutdown_mode = None
         self.command_prefix = '!'
+        self.default_status = 'Now with custom statuses!'
         super().__init__(command_prefix=self.command_prefix, description=description)
 
     async def shutdown(self, restart=False):
@@ -32,7 +33,7 @@ def initialize(bot_class=Bot):
     
     @bot.event
     async def on_ready():
-        await bot.change_presence(game=discord.Game(name='School [Gone]'))
+        await bot.change_presence(game=discord.Game(name=bot.default_status))
 
         print('------')
         print('SST CTF Discord Bot')
