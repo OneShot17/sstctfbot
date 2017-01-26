@@ -53,6 +53,9 @@ We do! Call 1-800-KYS-2DAY for help! That's 1-800-KYS-2DAY, or 1-800-597-8329.
 
 ```
 ''');
-
+    @commands.command()
+    async def sad(self):
+        await self.bot.say('Go eat some ice cream, you sad ball of depression.')
+        
 def setup(bot):
     bot.add_cog(Misc(bot))
