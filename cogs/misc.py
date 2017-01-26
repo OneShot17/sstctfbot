@@ -44,6 +44,15 @@ http://xkcd.com/221/''')
     async def dane(self):
         await self.bot.say('Dane\'s parents don\'t love him and he has no friends')
 
+    @commands.command()
+    async def suicideline(self):
+        await self.bot.say('''```
+Are you tired of this life? Do you just want to end it all? Do you not know how?
+
+We do! Call 1-800-KYS-2DAY for help! That's 1-800-KYS-2DAY, or 1-800-597-8329.
+
+```
+''');
 
 def setup(bot):
     bot.add_cog(Misc(bot))
