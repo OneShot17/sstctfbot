@@ -44,6 +44,12 @@ http://xkcd.com/221/''')
     async def dane(self):
         await self.bot.say('Dane\'s parents don\'t love him and he has no friends')
 
+    @commands.command()
+    async def stephen(self):
+        await self.bot.say('''Interviewer: What is your greatest accomplishment?
+
+Stephen: I was saved from suicide by a 9 in AP Lang once!
+''');
 
 def setup(bot):
     bot.add_cog(Misc(bot))
