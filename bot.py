@@ -3,6 +3,7 @@
 import asyncio
 import json
 import sys
+import datetime
 
 try:
     assert sys.version_info >= (3, 5)
@@ -21,6 +22,7 @@ class Bot(commands.Bot):
     def __init__(self, description):
         self.shutdown_mode = None
         self.update_mode = False
+        self.start_time = datetime.datetime.utcnow()
         self.command_prefix = '!'
         self.default_status = 'Now with custom statuses!'
         super().__init__(command_prefix=self.command_prefix, description=description)
