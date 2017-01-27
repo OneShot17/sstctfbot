@@ -49,4 +49,4 @@ and Python 3.5+ in order to run.
     python3 -m pip install -U discord.py
 
 ## License
-CTFBot is released under the [MIT License](License).
+CTFBot is released under the [MIT License](LICENSE).
