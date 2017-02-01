@@ -18,6 +18,10 @@ class CTF:
         await self.bot.say(plaintext.lower().translate(table))
 
     @commands.command()
+    async def reverse(self, text:str):
+        await self.bot.say(text[::-1])
+
+    @commands.command()
     async def add(self, *args:int):
         await self.bot.say(sum(args))
 
